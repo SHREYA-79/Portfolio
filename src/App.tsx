@@ -12,6 +12,7 @@ import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -73,6 +74,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <SpeedInsights />
       </div>
     </>
   );
